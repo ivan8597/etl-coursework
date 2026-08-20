@@ -27,7 +27,7 @@ python lead_funnel.py
 python sales_etl.py
 ```
 
-Перед запуском `sales_etl.py` положите файл `sales.csv` в корень проекта. Пример входных данных находится в `sample_sales.csv`.
+В корне проекта уже находится пример `sales.csv`, поэтому `sales_etl.py` можно запускать сразу. Дополнительный пример входных данных находится в `examples/sample_sales.csv`.
 
 ## Тестирование
 
@@ -36,7 +36,7 @@ python sales_etl.py
 ```bash
 python test_task_management.py
 python test_lead_funnel.py
-python test_sales_etl.py
+python test_sales_etl.py  # использует пути относительно проекта и временный выходной файл
 ```
 
 CRM-запросы в `test_lead_funnel.py` заменяются mock-объектами, поэтому тестирование не отправляет реальные данные во внешний сервис.
